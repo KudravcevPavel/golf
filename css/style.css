@@ -1,0 +1,63 @@
+p {
+    color: rgb(31, 5, 54);
+    border: 2px dashed black;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 35px;
+    padding: 35px;
+    width: 350px;
+    border-radius: 1rem;
+    border-color: purple;
+
+
+}
+
+h1 {
+    border-radius: 3rem;
+    border: 2px dashed purple;
+    text-align: center;
+    border-top-style: inset;
+}
+
+.foto1 {
+    width: 450px;
+    float: left;
+    margin-right: 50px;
+    border-radius: 20px;
+
+}
+
+.info {
+    width: 650px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    float: left;
+}
+
+.moreinfo {
+    width: 1000px;
+    border-radius: 20px;
+    float: left;
+    color: rgb(31, 5, 54);
+    border: 2px dashed black;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 25px;
+    width: 1000px;
+    border-radius: 1rem;
+    border-color: purple;
+}
+
+html {
+    background-image: url(https://html5book.ru/wp-content/uploads/2015/06/background28.jpg)
+}
