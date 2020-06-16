@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: proxima, Arial, Helvetica, sans-serif;
     font-size: 16px;
