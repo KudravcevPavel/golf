@@ -1,6 +1,7 @@
 .header {
     background: url(../../img/toms.jpg) center bottom no-repeat #000;
     background-size: cover;
+    height: 1080px;
 }
 
 .header__wrap {
