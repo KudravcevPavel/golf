@@ -1,7 +1,7 @@
 .header {
-    background: url(../../img/toms.jpg) center bottom no-repeat #000;
+    background: url(../../img/wvheader.jpg) center bottom no-repeat #000;
     background-size: cover;
-    height: 1080px;
+    height: 895px;
 }
 
 .header__wrap {
