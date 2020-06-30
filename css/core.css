@@ -15,6 +15,7 @@ body {
     overflow-wrap: break-word ;
 }
 .container {
+    
     max-width: 100%;
     min-width: 320px;
 }

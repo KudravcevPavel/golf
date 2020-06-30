@@ -6,6 +6,17 @@
     margin-bottom: 85px;
 }
 
+.content__mod {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-gap: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    margin-bottom: 85px;
+
+}
+
 .content__link {
     grid-column: span 1;
     padding-left: 40px;
@@ -24,7 +35,8 @@
 
 .content__link::after {
     content: "";
-    background-image: linear-gradient(0deg, rgb(26, 26, 26) 0%, rgba(26, 26, 26, 0) 100%);    position: absolute;
+    background-image: linear-gradient(0deg, rgb(26, 26, 26) 0%, rgba(26, 26, 26, 0) 100%);
+    position: absolute;
     left: 0;
     position: absolute;
     bottom: 0;
