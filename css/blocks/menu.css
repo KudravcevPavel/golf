@@ -26,6 +26,8 @@
     color: #000;
 }
 
+
+
 .menu__itm:first-child {
     margin-left: 0;
 }
@@ -36,15 +38,15 @@
     text-transform: uppercase;
     transition-property: color;
     transition-duration: 500ms;
-
 }
 
-.menu--black,
-.menu__link {
-    color: rgb(0, 0, 0);
+.menu__ink {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    transition-property: color;
+    transition-duration: 500ms;
 }
-
-
 
 .menu__link:hover,
 .menu__link:active,
