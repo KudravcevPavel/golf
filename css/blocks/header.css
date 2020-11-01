@@ -1,8 +1,7 @@
-
 .header {
-    background: url(../../img/wvheader.jpg) center bottom no-repeat #000;
+    background: url(../../img/DSC_9319-2.jpg) center  no-repeat;
     background-size: cover;
-    height: 100vmin;
+    
 }
 
 .header__wrap {
@@ -15,7 +14,7 @@
     grid-column-gap: 20px;
     padding-top: 40px;
     align-items: center;
-    
+
 }
 
 .header__info {
@@ -52,17 +51,20 @@
 .header__link:hover {
     letter-spacing: 15px;
 }
+
 @keyframes animateArrow {
     0% {
         transform: translateY(-10px);
     }
+
     50% {
         transform: translateY(15px);
     }
+
     100% {
         transform: translateY(-10px);
     }
-    
+
 }
 
 .header__btn {
@@ -70,7 +72,7 @@
     display: block;
     margin: 0 auto;
     width: 84px;
-    height: 42px;
+    height: 100px;
     cursor: pointer;
     animation: animateArrow 3s ease infinite;
 }
@@ -117,4 +119,3 @@
         .header__link:hover {
             letter-spacing: 9px;
         }
-
