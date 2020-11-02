@@ -1,10 +1,10 @@
 
 
 
-let headerBurger = document.querySelector('.header__burger');
-let headerMenu = document.querySelector('.header__menu');
-let back = document.querySelector('body');
-let menuList = document.querySelector('.menu__list');
+const headerBurger = document.querySelector('.header__burger');
+const headerMenu = document.querySelector('.header__menu');
+const back = document.querySelector('body');
+const menuList = document.querySelector('.menu__list');
 
 headerBurger.onclick = function () {
    headerBurger.classList.toggle('active');
