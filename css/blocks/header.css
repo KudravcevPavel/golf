@@ -126,21 +126,11 @@
 @media (max-width:1280px) {
     .header__title {
         font-size: 40px;
-        line-height: 160px;
-        letter-spacing: 16px;
-        
+           
     }
 }
 
 @media (max-width: 768px) {
-
-    .header__title {
-        font-size: 40px;
-        line-height: 80px;
-        letter-spacing: 16px;
-    
-    }
-
 
     .body.lock{
         overflow: hidden;
@@ -202,8 +192,6 @@ top: 9px;
     @media (max-width: 580px) {
         .header__title {
             font-size: 35px;
-            line-height: 355px;
-            letter-spacing: 9px;
         }
 
         .header__link {
