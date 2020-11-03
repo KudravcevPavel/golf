@@ -95,7 +95,7 @@
         margin: 0px 0px 20px 0px;
     }
     .header__top {
-        height: 50px;
+        height: 100%;
     }
     .header__link {
         flex: 0 0 40px;

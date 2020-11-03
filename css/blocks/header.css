@@ -44,18 +44,18 @@
     position: relative;
     z-index: 1;
 }
-
+/* 
 .header__logo {
     margin-bottom: 15px;
     flex: 0 0 60px;
     position: relative;
     z-index: 3;
-}
+} */
 
-.logo_link{
+/* .logo_link{
     display: block;
     z-index: 5;
-}
+} */
 
 .header__info {
     margin-top: 16.6%;
@@ -201,5 +201,5 @@ top: 9px;
         }
 
         .header__link:hover {
-            letter-spacing: 9px;
+            letter-spacing: 5px;
         }
