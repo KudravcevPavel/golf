@@ -1,3 +1,14 @@
+/* General variables */
+/* General configurations */
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 12px;
+   line-height: 0.5em;
+}
 
 button {
    background-color: transparent;
@@ -138,7 +149,7 @@ input::placeholder {
 
 .user_options-container {
    position: relative;
-   width: 40%;
+   width: 50%;
 }
 
 .user_options-text {
@@ -150,7 +161,7 @@ input::placeholder {
    justify-content: space-between;
    width: 100%;
    background-color: rgba(34, 34, 34, 0.85);
-   border-radius: 5px;
+   border-radius: 3px;
 }
 
 /* Registered and Unregistered user box and text */
@@ -226,7 +237,7 @@ input::placeholder {
    font-weight: 500;
    line-height: 1em;
    text-transform: uppercase;
-   color: #2a703b;
+   color: #2e691c;
    letter-spacing: 0.1rem;
 }
 
@@ -277,7 +288,7 @@ input::placeholder {
 }
 
 .user_options-forms .forms_buttons-action {
-   background-color: #2a703b;
+   background-color: #2e691c;
    border-radius: 3px;
    padding: 10px 35px;
    font-size: 1rem;
@@ -291,7 +302,7 @@ input::placeholder {
 }
 
 .user_options-forms .forms_buttons-action:hover {
-   background-color: #2a703b;
+   background-color: #2e691c;
 }
 
 .user_options-forms .user_forms-signup,
@@ -362,4 +373,3 @@ input::placeholder {
    -webkit-transform: translate3d(0, 0, 0);
    transform: translate3d(0, 0, 0);
 }
-

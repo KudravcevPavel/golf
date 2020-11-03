@@ -1,7 +1,7 @@
 .header {
     background: url(../../img/DSC_9319-2.jpg) center no-repeat;
     background-size: cover;
-    
+
 }
 
 .header__wrap {
@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     z-index: 3;
-   
+
 }
 
 .header__top {
@@ -29,7 +29,7 @@
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    
+
 }
 
 .menu__list {
@@ -37,6 +37,7 @@
     position: relative;
     z-index: 3;
 }
+
 .menu__list li {
     /* list-style: none; */
     display: flex;
@@ -75,7 +76,7 @@
     transition-duration: 500ms;
     transition-property: letter-spacing;
     max-width: 100%;
-   
+
 }
 
 .header__link:hover {
@@ -118,7 +119,7 @@
 
 @media (max-width: 768px) {
 
-    .body.lock{
+    .body.lock {
         overflow: hidden;
     }
 
@@ -126,7 +127,7 @@
         position: relative;
         width: 30px;
         height: 20px;
-    z-index: 3;
+        z-index: 3;
     }
 
     .header__burger span {
@@ -159,37 +160,30 @@
     }
 
     .header__burger.active span {
-        transform:scale(0);
+        transform: scale(0);
     }
 
-.header__burger.active:before{
-transform:rotate(45deg);
-top: 9px;
-}
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
 
-.header__burger.active:after{
-    transform:rotate(-45deg);
-    bottom: 9px;
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
     }
 
 }
 
 
-    @media (max-width: 580px) {
-        .header__title {
-            font-size: 35px;
-        }
+@media (max-width: 580px) {
+    .header__title {
+        font-size: 35px;
+    }
 
-        .header__link {
-            font-size: 20px;
-            line-height: 45px;
-            letter-spacing: 6px;
-        }
-
-        .header__link:hover {
-            letter-spacing: 5px;
-        }
-
-
-
-
+    .header__link {
+        font-size: 20px;
+        line-height: 45px;
+        letter-spacing: 6px;
+    }
+}
