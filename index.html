@@ -7,11 +7,12 @@
     <title>gridtamples</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
+        <header  class="header lock-padding">
             <div class="header_wrap wrap">
                 <div class="header__top">
                     <div class="headеr__logo logo">
@@ -36,14 +37,72 @@
                                     <a class="menu__link" href="#"> Контакты </a>
                                 </li>
                                 <li class="menu__itm">
-                                    <a class="menu__link popup-link" href="#popup"> Авторизация </a>
+                                    <a class="menu__link popup-link" href="#" data-modal="#modal_hire_me"> Авторизация </a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-
                 </div>
+                
+                <element class="user">
+                <div class="user_options-container">
+                    <div class="user_options-text">
+                        <div class="user_options-unregistered">
+                            <h2 class="user_unregistered-title">Что делать если у тебя нету аккаута? </h2>
+                            <p class="user_unregistered-text">Все просто, Просто пройди регистрацию.</p>
+                            <button class="user_unregistered-signup" id="signup-button">Регистрация</button>
+                        </div>
 
+                        <div class="user_options-registered">
+                            <h2 class="user_registered-title">У тебя уже есть аккаунт?</h2>
+                            <p class="user_registered-text">Осталось совсем немного=)</p>
+                            <button class="user_registered-login" id="login-button">Войти</button>
+                        </div>
+                    </div>
+
+                    <div class="user_options-forms" id="user_options-forms">
+                        <div class="user_forms-login">
+                            <h2 class="forms_title">Вход</h2>
+                            <form class="forms_form">
+                                <fieldset class="forms_fieldset">
+                                    <div class="forms_field">
+                                        <input type="email" placeholder="Email" class="forms_field-input" required
+                                            autofocus />
+                                    </div>
+                                    <div class="forms_field">
+                                        <input type="password" placeholder="Пароль" class="forms_field-input"
+                                            required />
+                                    </div>
+                                </fieldset>
+                                <div class="forms_buttons">
+                                    <button type="button" class="forms_buttons-forgot">Забыли пароль?</button>
+                                    <input type="submit" value="Войти" class="forms_buttons-action">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="user_forms-signup">
+                            <h2 class="forms_title">Регистрация</h2>
+                            <form class="forms_form">
+                                <fieldset class="forms_fieldset">
+                                    <div class="forms_field">
+                                        <input type="text" placeholder="Логин" class="forms_field-input" required />
+                                    </div>
+                                    <div class="forms_field">
+                                        <input type="email" placeholder="Email" class="forms_field-input" required />
+                                    </div>
+                                    <div class="forms_field">
+                                        <input type="password" placeholder="Пароль" class="forms_field-input"
+                                            required />
+                                    </div>
+                                </fieldset>
+                                <div class="forms_buttons">
+                                    <input type="submit" value="Войти" class="forms_buttons-action">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </element>
                 <div class="header__info">
                     <h1 class="header__title">Volkswagen Golf II</h1>
                     <p class="header__text">
@@ -162,71 +221,7 @@
         </div>
     </footer>
     </div>
-    <div id="popup" class="popup ">
-        <div class="popup__body">
-            <div class="popup__content ">
-                <section class="user">
-                    <div class="user_options-container">
-                        <div class="user_options-text">
-                            <div class="user_options-unregistered">
-                                <h2 class="user_unregistered-title">Что делать если у тебя нету аккаута? </h2>
-                                <p class="user_unregistered-text">Все просто, Просто пройди регистрацию.</p>
-                                <button class="user_unregistered-signup" id="signup-button">Регистрация</button>
-                            </div>
 
-                            <div class="user_options-registered">
-                                <h2 class="user_registered-title">У тебя уже есть аккаунт?</h2>
-                                <p class="user_registered-text">Осталось совсем немного=)</p>
-                                <button class="user_registered-login" id="login-button">Войти</button>
-                            </div>
-                        </div>
-
-                        <div class="user_options-forms" id="user_options-forms">
-                            <div class="user_forms-login">
-                                <h2 class="forms_title">Вход</h2>
-                                <form class="forms_form">
-                                    <fieldset class="forms_fieldset">
-                                        <div class="forms_field">
-                                            <input type="email" placeholder="Email" class="forms_field-input" required
-                                                autofocus />
-                                        </div>
-                                        <div class="forms_field">
-                                            <input type="password" placeholder="Пароль" class="forms_field-input"
-                                                required />
-                                        </div>
-                                    </fieldset>
-                                    <div class="forms_buttons">
-                                        <button type="button" class="forms_buttons-forgot">Забыли пароль?</button>
-                                        <input type="submit" value="Войти" class="forms_buttons-action">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="user_forms-signup">
-                                <h2 class="forms_title">Регистрация</h2>
-                                <form class="forms_form">
-                                    <fieldset class="forms_fieldset">
-                                        <div class="forms_field">
-                                            <input type="text" placeholder="Логин" class="forms_field-input" required />
-                                        </div>
-                                        <div class="forms_field">
-                                            <input type="email" placeholder="Email" class="forms_field-input"
-                                                required />
-                                        </div>
-                                        <div class="forms_field">
-                                            <input type="password" placeholder="Пароль" class="forms_field-input"
-                                                required />
-                                        </div>
-                                    </fieldset>
-                                    <div class="forms_buttons">
-                                        <input type="submit" value="Войти" class="forms_buttons-action">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
 
     </div>
     </div>

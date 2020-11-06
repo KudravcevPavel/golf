@@ -54,7 +54,7 @@
 .header__title {
     color: #fff;
     font-size: 60px;
-    line-height: 70px;
+    line-height: 60px;
     letter-spacing: 36px;
     text-align: center;
     font-weight: normal;
@@ -187,3 +187,4 @@
         letter-spacing: 6px;
     }
 }
+
