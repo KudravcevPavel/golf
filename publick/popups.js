@@ -1,4 +1,4 @@
-/* const popupLinks = document.querySelectorAll('.popup-link');
+const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock-padding");
 
@@ -38,7 +38,7 @@ function popupOpen(curentPopup) {
       }
       curentPopup.classList.add('open');
       curentPopup.addEventListener("click", function (e) {
-         if (!e.target.closest('.header__menu')) {
+         if (!e.target.closest('.popup__content')) {
             popupClose(e.target.closest('.popup'));
          }
       });
@@ -55,7 +55,7 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
-   const lockPaddingValue = window.innerWidth - document.querySelector('.container').offsetWidth + 'px';
+   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
    if (lockPadding.length > 0) {
       for (let index = 0; index < lockPadding.length; index++) {
@@ -120,60 +120,4 @@ document.addEventListener('keydown', function (e) {
          Element.prototype.mozMatchesSelector ||
          Element.prototype.msMatchesSelector;
    }
-})(); */
-
-
-
-/* const modalCall = $("[data-modal]");
-const modalClose = $("[data-close]");
-
-modalCall.on("click", function (event) {
-   event.preventDefault();
-
-   let $this = $(this);
-   let modalId = $this.data('modal');
-
-   $(modalId).addClass('show');
-   $("body").addClass('no-scroll');
-
-   setTimeout(function () {
-      $(modalId).find(".modal__dialog").css({
-         transform: "scale(1)"
-      });
-   }, 200);
-});
-
-
-modalClose.on("click", function (event) {
-   event.preventDefault();
-
-   let $this = $(this);
-   let modalParent = $this.parents('.modal');
-
-   modalParent.find(".modal__dialog").css({
-      transform: "scale(0)"
-   });
-
-   setTimeout(function () {
-      modalParent.removeClass('show');
-      $("body").removeClass('no-scroll');
-   }, 200);
-});
-
-
-$(".modal").on("click", function (event) {
-   let $this = $(this);
-
-   $this.find(".modal__dialog").css({
-      transform: "scale(0)"
-   });
-
-   setTimeout(function () {
-      $this.removeClass('show');
-      $("body").removeClass('no-scroll');
-   }, 200);
-});
-
-$(".modal__dialog").on("click", function (event) {
-   event.stopPropagation();
-}); */
+})();

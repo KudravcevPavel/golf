@@ -1,367 +1,197 @@
-/* General variables */
-/* General configurations */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
-button {
-   background-color: transparent;
-   padding: 0;
-   border: 0;
-   outline: 0;
-   cursor: pointer;
-}
-
-input {
-   background-color: transparent;
-   padding: 0;
-   border: 0;
-   outline: 0;
-}
-
-input[type="submit"] {
-   cursor: pointer;
-}
-
-input::-webkit-input-placeholder {
-   font-size: 0.85rem;
-   font-family: "Montserrat", sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.1rem;
-   color: #ccc;
-}
-
-input::-moz-placeholder {
-   font-size: 0.85rem;
-   font-family: "Montserrat", sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.1rem;
-   color: #ccc;
-}
-
-input:-ms-input-placeholder {
-   font-size: 0.85rem;
-   font-family: "Montserrat", sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.1rem;
-   color: #ccc;
-}
-
-input::placeholder {
-   font-size: 0.85rem;
-   font-family: "Montserrat", sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.1rem;
-   color: #ccc;
-}
-
-/* Animations */
-@-webkit-keyframes bounceLeft {
-   0% {
-      -webkit-transform: translate3d(100%, -50%, 0);
-      transform: translate3d(100%, -50%, 0);
-   }
-
-   50% {
-      -webkit-transform: translate3d(-30px, -50%, 0);
-      transform: translate3d(-30px, -50%, 0);
-   }
-
-   100% {
-      -webkit-transform: translate3d(0, -50%, 0);
-      transform: translate3d(0, -50%, 0);
-   }
-}
-
-@keyframes bounceLeft {
-   0% {
-      -webkit-transform: translate3d(100%, -50%, 0);
-      transform: translate3d(100%, -50%, 0);
-   }
-
-   50% {
-      -webkit-transform: translate3d(-30px, -50%, 0);
-      transform: translate3d(-30px, -50%, 0);
-   }
-
-   100% {
-      -webkit-transform: translate3d(0, -50%, 0);
-      transform: translate3d(0, -50%, 0);
-   }
-}
-
-@-webkit-keyframes bounceRight {
-   0% {
-      -webkit-transform: translate3d(0, -50%, 0);
-      transform: translate3d(0, -50%, 0);
-   }
-
-   50% {
-      -webkit-transform: translate3d(calc(100% + 30px), -50%, 0);
-      transform: translate3d(calc(100% + 30px), -50%, 0);
-   }
-
-   100% {
-      -webkit-transform: translate3d(100%, -50%, 0);
-      transform: translate3d(100%, -50%, 0);
-   }
-}
-
-@keyframes bounceRight {
-   0% {
-      -webkit-transform: translate3d(0, -50%, 0);
-      transform: translate3d(0, -50%, 0);
-   }
-
-   50% {
-      -webkit-transform: translate3d(calc(100% + 30px), -50%, 0);
-      transform: translate3d(calc(100% + 30px), -50%, 0);
-   }
-
-   100% {
-      -webkit-transform: translate3d(100%, -50%, 0);
-      transform: translate3d(100%, -50%, 0);
-   }
-}
-
-/* Page background */
-.user {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   /* display: none; */
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
+.popup {
+   position: fixed;
    width: 100%;
-   height: 50vh;
-   background: url("https://goo.gl/YRxqs1") no-repeat center;
-   background-size: cover;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
 }
 
-.user_options-container {
-   position: relative;
-   width: 50%;
-}
-
-.user_options-text {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
-   justify-content: space-between;
-   width: 100%;
-   background-color: rgba(34, 34, 34, 0.85);
-   border-radius: 3px;
-}
-
-/* Registered and Unregistered user box and text */
-.user_options-registered,
-.user_options-unregistered {
-   width: 50%;
-   padding: 75px 45px;
-   color: #fff;
-   font-weight: 300;
-}
-
-.user_registered-title,
-.user_unregistered-title {
-   margin-bottom: 15px;
-   font-size: 1.66rem;
-   line-height: 1em;
-}
-
-.user_unregistered-text,
-.user_registered-text {
-   font-size: 0.83rem;
-   line-height: 1.4em;
-}
-
-.user_registered-login,
-.user_unregistered-signup {
-   margin-top: 30px;
-   border: 1px solid #ccc;
-   border-radius: 3px;
-   padding: 10px 30px;
-   color: #fff;
-   text-transform: uppercase;
-   line-height: 1em;
-   letter-spacing: 0.2rem;
-   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.user_registered-login:hover,
-.user_unregistered-signup:hover {
-   color: rgba(34, 34, 34, 0.85);
-   background-color: #ccc;
-}
-
-/* Login and signup forms */
-.user_options-forms {
-   position: absolute;
-   top: 50%;
-   left: 30px;
-   width: calc(50% - 30px);
-   min-height: 419px;
-   padding: 70px 40px;
+.popup__content {
    background-color: #fff;
-   border-radius: 3px;
-   box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
-   overflow: hidden;
-   -webkit-transition: -webkit-transform 0.4s ease-in-out;
-   transition: -webkit-transform 0.4s ease-in-out;
-   transition: transform 0.4s ease-in-out;
-   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-   -webkit-transform: translate3d(100%, -50%, 0);
-   transform: translate3d(100%, -50%, 0);
+   color: #000;
+   max-width: 800px;
+   padding: 30px;
+   position: relative;
+   transition: all 0.8s ease 0s;
+   opacity: 0;
+   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
-.user_options-forms .user_forms-login {
-   -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+.popup:target {
+   opacity: 1;
+   visibility: visible;
 }
 
-.user_options-forms .forms_title {
-   margin-bottom: 45px;
-   font-size: 1.5rem;
-   font-weight: 500;
-   line-height: 1em;
-   text-transform: uppercase;
-   color: #2e691c;
-   letter-spacing: 0.1rem;
+.popup.open .popup__content {
+   transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+   opacity: 1;
 }
 
-.user_options-forms .forms_field:not(:last-of-type) {
-   margin-bottom: 20px;
-}
-
-.user_options-forms .forms_field-input {
-   width: 100%;
-   border-bottom: 1px solid #ccc;
-   padding: 6px 20px 6px 0;
-   font-family: "Montserrat", sans-serif;
-   font-size: 1rem;
-   font-weight: 300;
-   color: gray;
-   letter-spacing: 0.1rem;
-   -webkit-transition: border-color 0.2s ease-in-out;
-   transition: border-color 0.2s ease-in-out;
-}
-
-.user_options-forms .forms_field-input:focus {
-   border-color: gray;
-}
-
-.user_options-forms .forms_buttons {
-   display: -webkit-box;
-   display: -ms-flexbox;
+.popup__body {
+   padding-left: 35px;
+   padding-right: 35px;
+   padding-top: 35px;
+   -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+   min-height: 100%;
    display: flex;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
-   justify-content: space-between;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
    align-items: center;
-   margin-top: 35px;
+   justify-content: center;
+   padding: 30px 10px;
+   transition: all 0.8s ease 0s;
 }
 
-.user_options-forms .forms_buttons-forgot {
-   font-family: "Montserrat", sans-serif;
-   letter-spacing: 0.1rem;
-   color: #ccc;
-   -webkit-transition: color 0.2s ease-in-out;
-   transition: color 0.2s ease-in-out;
-}
-
-.user_options-forms .forms_buttons-forgot:hover {
-   color: #b3b3b3;
-}
-
-.user_options-forms .forms_buttons-action {
-   background-color: #2e691c;
-   border-radius: 3px;
-   padding: 10px 35px;
-   font-size: 1rem;
-   font-family: "Montserrat", sans-serif;
-   font-weight: 300;
-   color: #fff;
-   text-transform: uppercase;
-   letter-spacing: 0.1rem;
-   -webkit-transition: background-color 0.2s ease-in-out;
-   transition: background-color 0.2s ease-in-out;
-}
-
-.user_options-forms .forms_buttons-action:hover {
-   background-color: #2e691c;
-}
-
-.user_options-forms .user_forms-signup,
-.user_options-forms .user_forms-login {
+/* .popup__close {
    position: absolute;
-   top: 70px;
-   left: 40px;
-   width: calc(100% - 80px);
-   opacity: 0;
-   visibility: hidden;
-   -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.5s ease-in-out;
-   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.5s ease-in-out;
-   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.5s ease-in-out;
-   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+   right: 10px;
+   top: 10px;
+   font-size: 20px;
+   color: #000;
+   text-decoration: none;
+} */
+
+.feedback-input {
+   color: #3c3c3c;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   border-radius: 0;
+   line-height: 22px;
+   background-color: #fbfbfb;
+   padding: 13px 13px 13px 54px;
+   margin-bottom: 10px;
+   width: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 3px solid rgba(0, 0, 0, 0);
+
 }
 
-.user_options-forms .user_forms-signup {
-   -webkit-transform: translate3d(120px, 0, 0);
-   transform: translate3d(120px, 0, 0);
+.feedback-input:focus {
+   background: #fff;
+   box-shadow: 0;
+   border: 3px solid #3498db;
+   color: #3498db;
+   outline: none;
+   padding: 13px 13px 13px 54px;
 }
 
-.user_options-forms .user_forms-signup .forms_buttons {
-   -webkit-box-pack: end;
-   -ms-flex-pack: end;
-   justify-content: flex-end;
+.focused {
+   color: #30aed6;
+   border: #30aed6 solid 3px;
 }
 
-.user_options-forms .user_forms-login {
-   -webkit-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
-   opacity: 1;
-   visibility: visible;
+/* Icons ---------------------------------- */
+#name {
+   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+   background-size: 30px 30px;
+   background-position: 11px 8px;
+   background-repeat: no-repeat;
 }
 
-/* Triggers */
-.user_options-forms.signup-click {
-   -webkit-animation: bounceLeft 1s forwards;
-   animation: bounceLeft 1s forwards;
+#name:focus {
+   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+   background-size: 30px 30px;
+   background-position: 8px 5px;
+   background-position: 11px 8px;
+   background-repeat: no-repeat;
 }
 
-.user_options-forms.signup-click .user_forms-signup {
-   opacity: 1;
-   visibility: visible;
-   -webkit-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
+#email {
+   background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+   background-size: 30px 30px;
+   background-position: 11px 8px;
+   background-repeat: no-repeat;
 }
 
-.user_options-forms.signup-click .user_forms-login {
-   opacity: 0;
-   visibility: hidden;
-   -webkit-transform: translate3d(-120px, 0, 0);
-   transform: translate3d(-120px, 0, 0);
+#email:focus {
+   background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+   background-size: 30px 30px;
+   background-position: 11px 8px;
+   background-repeat: no-repeat;
 }
 
-.user_options-forms.login-click {
-   -webkit-animation: bounceRight 1s forwards;
-   animation: bounceRight 1s forwards;
+#comment {
+   background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+   background-size: 30px 30px;
+   background-position: 11px 8px;
+   background-repeat: no-repeat;
 }
 
-.user_options-forms.login-click .user_forms-signup {
-   opacity: 0;
-   visibility: hidden;
+textarea {
+   width: 100%;
+   height: 150px;
+   line-height: 150%;
+   resize: vertical;
 }
 
-.user_options-forms.login-click .user_forms-login {
-   opacity: 1;
-   visibility: visible;
-   -webkit-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+   background-color: white;
+}
+
+#button-blue {
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   float: left;
+   width: 100%;
+   border: #fbfbfb solid 4px;
+   cursor: pointer;
+   background-color: #3498db;
+   color: white;
+   font-size: 24px;
+   padding-top: 22px;
+   padding-bottom: 22px;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+   margin-top: -4px;
+   font-weight: 700;
+}
+
+#button-blue:hover {
+   background-color: rgba(0, 0, 0, 0);
+   color: #0493bd;
+}
+
+.submit:hover {
+   color: #3498db;
+}
+
+.ease {
+   width: 0px;
+   height: 74px;
+   background-color: #fbfbfb;
+   -webkit-transition: .3s ease;
+   -moz-transition: .3s ease;
+   -o-transition: .3s ease;
+   -ms-transition: .3s ease;
+   transition: .3s ease;
+}
+
+.submit:hover .ease {
+   width: 100%;
+   background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+   #form-div {
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+   }
 }
