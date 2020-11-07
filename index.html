@@ -36,7 +36,7 @@
                                     <a class="menu__link" href="#"> Контакты </a>
                                 </li>
                                 <li class="menu__itm">
-                                    <a class="menu__link popup-link" href="#popup"> Авторизация
+                                    <a class="menu__link popup-link " href="#popup"> Авторизация
                                     </a>
                                 </li>
                             </ul>
@@ -46,82 +46,97 @@
                 <div id="popup" class="popup">
                     <div class="popup__body">
                         <div class="popup__content">
-                            <form class="form" >
-
-                                <p class="name">
-                                    <input name="name" type="text"
-                                        class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
-                                        placeholder="Name" id="name" />
-                                </p>
-
-                                <p class="email">
-                                    <input name="email" type="text"
-                                        class="validate[required,custom[email]] feedback-input" id="email"
-                                        placeholder="Email" />
-                                </p>
-
-                                <p class="text">
-                                    <textarea name="text" class="validate[required,length[6,300]] feedback-input"
-                                        id="comment" placeholder="Comment"></textarea>
-                                </p>
-
-
-                                <div class="submit">
-                                    <input type="submit" value="SEND" id="button-blue" />
-                                    <div class="ease"></div>
-                                </div>
-                            </form>
+                            <a href="#header" class="popup__close close-popup"></a>
+                            <div class="popup__text">                                
+                                <form class="form">
+                                    <p class="name">
+                                        <input name="name" type="text"
+                                            class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+                                            placeholder="Name" id="name" />
+                                    </p>
+                                    <p class="email">
+                                        <input name="email" type="text"
+                                            class="validate[required,custom[email]] feedback-input" id="email"
+                                            placeholder="Email" />
+                                    </p>
+                                    <p class="text">
+                                        <textarea name="text" class="validate[required,length[6,300]] feedback-input"
+                                            id="comment" placeholder="Comment"></textarea>
+                                    </p>
+                                    <div class="submit">
+                                        <input type="submit" value="SEND" id="button-blue" />
+                                        <div class="ease"></div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="header__info">
-                    <h1 class="header__title">Volkswagen Golf II</h1>
-                    <p class="header__text">
-                        <a class="header__link " href="#">SHOP NOW</a>
-                    </p>
-                </div>
-                <a href="#content" class="header__btn">
-                    <img class="header__arrow" src="img/arrow.png" alt="перейти ниже">
-                </a>
             </div>
-        </header>
-        <main id="content" class="content">
-            <div class="content__wrap wrap">
-                <a class="content__link content__link__two" href="#">
-
-                    <span class="content__name content__name--big">Volkswagen Golf II — второе поколение одного из
-                        популярнейших....</span>
-                </a>
-                <a class="content__link" href="#">
-
-                    <span class="content__name">Виды салонов</span>
-                </a>
-                <a class="content__link" href="#">
-
-                    <span class="content__name">Редкие модификации</span>
-                </a>
-                <a class="content__link content__link--pt" href="#">
-
-                    <span class="content__name">Технические характеристики</span>
-                </a>
-                <a class="content__link content__link--pt" href="#">
-
-                    <span class="content__name">Тюнинг</span>
-                </a>
-                <a class="content__link content__link--pt" href="#">
-
-                    <span class="content__name">Контакты</span>
-                </a>
-            </div>
-        </main>
-        <section class="instagram">
-            <div class="instagram__info">
-                <h2 class="instagram__title">#ICNDY ON INSTAGRAM</h2>
-                <p class="instagram__text">
-                    <a class="instagram__link" href="#">VIEW HASHTAG</a>
+            <div class="header__info">
+                <h1 class="header__title">Volkswagen Golf II</h1>
+                <p class="header__text">
+                    <a class="header__link " href="#">SHOP NOW</a>
                 </p>
             </div>
+            <a href="#content" class="header__btn">
+                <img class="header__arrow" src="img/arrow.png" alt="перейти ниже">
+            </a>
     </div>
+    </header>
+    <main id="content" class="content">
+        <div class="content__wrap wrap">
+            <a class="content__link content__link__two" href="#">
+
+                <span class="content__name content__name--big">Volkswagen Golf II — второе поколение одного из
+                    популярнейших....</span>
+            </a>
+            <a class="content__link" href="#">
+
+                <span class="content__name">Виды салонов</span>
+            </a>
+            <a class="content__link" href="#">
+
+                <span class="content__name">Редкие модификации</span>
+            </a>
+            <a class="content__link content__link--pt" href="#">
+
+                <span class="content__name">Технические характеристики</span>
+            </a>
+            <a class="content__link content__link--pt" href="#">
+                <span class="content__name">Тюнинг</span>
+            </a>
+            <a class="content__link content__link--pt" href="#">
+                <span class="content__name">Контакты</span>
+            </a>
+        </div>
+    </main>
+    <div class="sliderSlick">
+        <div class="slider__item">
+            <img src="./img/slider/01.jpg" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/02.jpg" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/03.jpg" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/04.jpg" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/05.jpg" alt="">
+        </div>
+    </div>
+        <section class="instagram">
+        <div class="instagram__info">
+            <h2 class="instagram__title">#ICNDY ON INSTAGRAM</h2>
+            <p class="instagram__text">
+                <a class="instagram__link" href="#">VIEW HASHTAG</a>
+            </p>
+        </div>
+        
     </section>
     <div class="slider">
         <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
@@ -191,18 +206,18 @@
             </ul>
         </div>
     </footer>
-    </div>
-
-
+    
     </div>
     </div>
-
-
     </div>
-    <script src="publick/script.js"></script>
+    </div>
+    </div>
+    <script src="publick/burger.js"></script>
     <script src="publick/forms.js"></script>
     <script src="publick/popups.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="publick/slick.min.js"></script>
+    <script src="publick/sliderSlick.js"></script>
 </body>
 
 </html>
