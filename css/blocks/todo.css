@@ -38,6 +38,13 @@ input[type=text] {
    cursor: pointer;
 }
 
+.del {
+   margin-top: 10px;
+   max-width: 400px;
+   padding: 10px;
+   cursor: pointer;
+}
+
 
 .todo {
    padding-left: 0;

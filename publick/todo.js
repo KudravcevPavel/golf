@@ -1,6 +1,7 @@
 let addMessage = document.querySelector('.message'),
    addButton = document.querySelector('.add');
 todo = document.querySelector('.todo');
+deleteButton = document.querySelector('del');
 let todoList = [];
 
 if (localStorage.getItem('todo')) {
@@ -64,3 +65,4 @@ todo.addEventListener('contextmenu', function (event) {
       }
    })
 });
+

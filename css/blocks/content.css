@@ -36,7 +36,7 @@
     padding-bottom: 35px;
     box-sizing: border-box;
     text-decoration: none;
-    background: url("../../img/wp1.jpg")no-repeat center #000;
+    background: url("../../img/wp1.webp")no-repeat center #000;
     background-size: cover;
     height: auto;
     display: flex;
@@ -63,27 +63,27 @@
 }
 
 .content__link:nth-child(2) {
-    background-image: url("../../img/salon.jpg");
+    background-image: url("../../img/salon.webp");
     background-size: cover;
 }
 
 .content__link:nth-child(3) {
-    background-image: url("../../img/modifi.jpg");
+    background-image: url("../../img/modifi.webp");
 }
 
 .content__link:nth-child(4) {
-    background-image: url("../../img/teh.jpg");
+    background-image: url("../../img/teh.webp");
     background-size: cover;
     
 }
 
 .content__link:nth-child(5) {
-    background-image: url("../../img/tu1.jpg");
+    background-image: url("../../img/tu1.webp");
     background-size: cover;
 }
 
 .content__link:nth-child(6) {
-    background-image: url("../../img/news2.jpg");
+    background-image: url("../../img/news2.webp");
     background-size: cover ;
 }
 
