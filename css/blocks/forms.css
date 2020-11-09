@@ -111,6 +111,11 @@
       height: auto;
       margin: auto;
    }
+   .imgWiki {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+   }
 }
 
 @media (max-width: 580px) {

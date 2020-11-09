@@ -6,7 +6,7 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       speed: 1000,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       pauseOnFocus: true,
       pauseOnHover: true,
