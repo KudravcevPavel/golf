@@ -277,3 +277,20 @@
         letter-spacing: 4px;
     }
 }
+
+@media (max-width: 480px) {
+    .content__link {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+
+
+@media (max-width: 320px) {
+    .content__link {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

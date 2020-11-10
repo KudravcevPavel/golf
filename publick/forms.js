@@ -1,6 +1,6 @@
-const signupButton = document.getElementById('signup-button'),
-   loginButton = document.getElementById('login-button'),
-   userForms = document.getElementById('user_options-forms');
+const signupButton = document.getElementById('signup-button');
+const loginButton = document.getElementById('login-button');
+const userForms = document.getElementById('user_options-forms');
 
 
 
