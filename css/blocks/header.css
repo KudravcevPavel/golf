@@ -1,7 +1,6 @@
 .header {
     background: url(../../img/DSC_9319-2\ \(1\).webp) center no-repeat;
     background-size: cover;
-
 }
 
 .header__wrap {
@@ -189,17 +188,16 @@
         transform: rotate(-45deg);
         bottom: 9px;
     }
-    .hea
-    der__title {
+    .header__title {
         font-size: 35px;
-
+    }
 
 }
 
 
 @media (max-width: 580px) {
     .header__title {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .header__link {

@@ -27,13 +27,13 @@
                                     <a class="menu__link " href="#history"> История </a>
                                 </li>
                                 <li class="menu__itm">
-                                    <a class="menu__link" href="#"> Тюнинг </a>
+                                    <a class="menu__link" href="#tuning"> Тюнинг </a>
                                 </li>
                                 <li class="menu__itm">
                                     <a class="menu__link" href="#sliderSlick"> Галлерея </a>
                                 </li>
                                 <li class="menu__itm">
-                                    <a class="menu__link" href="#"> Контакты </a>
+                                    <a class="menu__link" href="#contacts"> Контакты </a>
                                 </li>
                                 <li class="menu__itm">
                                     <a class="menu__link popup-link " href="#popup"> Авторизация
@@ -857,6 +857,32 @@
                         </div>
                     </div>
                 </div>
+                <div id="popup_6" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <div class="cont">
+                                <div class="card">
+                                    <div class="card-item">
+                                        <img src="/img/cl1.jpg" alt="">
+                                        <p>Тюнинг мотора</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-item">
+                                        <img src="/img/cl2.jpg" alt="">
+                                        <p>Оптика</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-item">
+                                        <img src="/img/cl3.jpg" alt="">
+                                        <p>Обвес</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="header__info">
                     <h1 class="header__title">Volkswagen Golf II</h1>
                     <p class="header__text">
@@ -887,10 +913,10 @@
 
                     <span class="content__name">Технические характеристики</span>
                 </a>
-                <a class="content__link content__link--pt" href="#">
+                <a id="tuning" class="content__link content__link--pt popup-link" href="#popup_6">
                     <span class="content__name">Тюнинг</span>
                 </a>
-                <a class="content__link content__link--pt" href="#">
+                <a id="contacts"class="content__link content__link--pt" href="#">
                     <span class="content__name">Контакты</span>
                 </a>
             </div>
@@ -931,6 +957,7 @@
                 <ul class="todo"></ul>
             </div>
         </div>
+        
         <!-- <div class="slider">
             <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
             <input type="radio" name="slider" title="slide2" class="slider__nav" />
@@ -1007,12 +1034,12 @@
     </div>
     </div>
     <script src="publick/burger.js"></script>
-    <script src="publick/forms.js"></script>
     <script src="publick/popups.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="publick/slick.min.js"></script>
     <script src="publick/sliderSlick.js"></script>
     <script src="publick/todo.js"></script>
+    <script src="publick/card.js"></script>
 </body>
 
 </html>

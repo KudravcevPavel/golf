@@ -1,0 +1,25 @@
+.cont {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+
+.card {
+perspective: 1000px;
+transform-style: preserve-3d ;
+font-size: 30px;
+line-height: 75px;
+color: #000000;
+text-align: center;
+}
+
+
+.card-item {
+   max-width: 100%;
+   margin: auto;
+   height: auto;
+   transition: transform 0.2s;
+}
+
